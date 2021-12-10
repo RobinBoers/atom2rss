@@ -150,7 +150,6 @@
 <x:template match="atom:entry">
 <item>
 	<x:choose>
-		<x:when test="atom:summary"><description><x:apply-templates select="atom:summary" mode="asHTML"/> <x:if test="atom:content"> (...)</x:if></description></x:when> 
 		<x:when test="atom:content"><description><x:apply-templates select="atom:content" mode="asHTML"/></description></x:when> 
 	</x:choose>
 	<x:apply-templates/>
