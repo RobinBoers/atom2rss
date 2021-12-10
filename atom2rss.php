@@ -9,7 +9,7 @@
     $processor = new XSLTProcessor();
     $processor->registerPHPFunctions();
     $processor->importStylesheet($sheet);
-    date_default_timezone_set("Asia/Shanghai");
+    date_default_timezone_set("Europe/Amsterdam");
     $result = $processor->transformToXML($chan);
     if (strlen($result)) {
 		file_put_contents($toFile, $result);
